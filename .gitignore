@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# PyInstaller build output
+build/
+dist/
+*.manifest
+
+# Audio scratch / recordings
+*.wav
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
