@@ -58,6 +58,15 @@ from PySide6.QtWidgets import (
 )
 
 
+# In a windowed (no-console) build — e.g. the packaged .exe — sys.stdout and
+# sys.stderr are None, so any print() or library progress bar (huggingface's
+# tqdm) would crash with AttributeError. Route them to a throwaway sink.
+if sys.stdout is None:
+    sys.stdout = open(os.devnull, "w")
+if sys.stderr is None:
+    sys.stderr = open(os.devnull, "w")
+
+
 # ──────────────────────────────────────────────────────────────────────────────
 #  Configuration
 # ──────────────────────────────────────────────────────────────────────────────
