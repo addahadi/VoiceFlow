@@ -1,0 +1,9 @@
+# Normalize line endings: LF in the repo, native in each working copy.
+* text=auto
+
+*.py   text
+*.md   text
+*.txt  text
+*.spec text
+
+*.wav  binary
