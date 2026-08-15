@@ -5,12 +5,9 @@ and your words are typed into whatever field has focus — chat apps, editors, t
 terminal, or an AI agent like Claude. Everything runs **on your machine**; no
 audio ever leaves it.
 
-Built as a free, open alternative to hosted dictation tools.
+Built as a free, open alternative to hosted dictation tools like Wispr Flow.
 
-<!-- Add a short screen recording here — it sells the tool better than words.
-     Save it as docs/demo.gif and uncomment:
-![Voice Flow in action](docs/demo.gif)
--->
+![Voice Flow](voiceflow-hero.png)
 
 ## Features
 
@@ -25,6 +22,22 @@ Built as a free, open alternative to hosted dictation tools.
 - **Local & private** — transcription runs offline via
   [faster-whisper](https://github.com/SYSTRAN/faster-whisper) (`small.en`, CPU).
 - **Runs on startup** (optional) and lives in the system tray.
+
+## What it looks like
+
+The overlay is a single pill that sits quietly at rest and expands to show a live
+waveform, timer, and status only while you're talking.
+
+![Voice Flow in action](voiceflow-demo.gif)
+
+Every state at a glance:
+
+![Voice Flow states](voiceflow-states.png)
+
+Right-click the pill (or the tray icon) for settings — rebind the hotkey, toggle
+*Press Enter after pasting*, or *Start with Windows*.
+
+![Voice Flow settings menu](voiceflow-menu.png)
 
 ## Download
 
